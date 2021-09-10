@@ -1,0 +1,27 @@
+{
+  "name": "cat-facts.js",
+  "version": "1.0.0",
+  "description": "cat-facts.js utilizes the Cat-Facts API to give users facts about cats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattPlays/cat-facts.js.git"
+  },
+  "keywords": [
+    "cats",
+    "cat-facts",
+    "api"
+  ],
+  "author": "MattPlays (https://github.com/MattPlays/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattPlays/cat-facts.js/issues"
+  },
+  "homepage": "https://github.com/MattPlays/cat-facts.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
