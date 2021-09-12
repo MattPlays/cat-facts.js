@@ -1,6 +1,6 @@
 {
   "name": "cat-facts.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cat-facts.js utilizes the Cat-Facts API to give users facts about cats",
   "main": "index.js",
   "scripts": {
