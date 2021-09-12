@@ -1,12 +1,17 @@
-const fetch = require("node-fetch");
+const axios = require("axios").default;
 /**
  * @returns {Promise<any>}
  */
 module.exports = async() => {
-    return fetch("https://cat-fact.herokuapp.com/facts", {
-        "method": "GET",
-        "headers": {
+    return axios({
+        method: "GET",
+        url: "https://cat-fact.herokuapp.com/facts",
+        headers: {
             "Accept": "application/json"
-        }
-    }).then((data) => data.json()).then((data) => {return data}).catch((err) => {throw new Error(err)})
+        },
+        timeoutErrorMessage: "Sorry, the API took to long to respond. Please Try Again.",
+        timeout: 5000,
+    }).then(({data}) => {
+        return data;
+    }).catch((err) => {throw new Error(err)});
 };
